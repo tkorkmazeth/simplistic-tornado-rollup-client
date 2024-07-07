@@ -1,44 +1,45 @@
 export const config = {
-  title: "FundPoint",
-  description: "Blockchain-mediated proof of fund requests with one click",
+  title: "CashProof Enhanced",
+  description:
+    "Effortless, Privacy-Preserving Proof of Funds with Blockchain Technology",
   isLocal: process.env.NEXT_PUBLIC_ENV === "development",
   about: [
     {
-      title: "What is FundPoint?",
+      title: "What is CashProof Enhanced?",
       description:
-        "FundPoint is a tool that allows you to verify your balance without exposing your addresses or balance to the requester.",
+        "CashProof Enhanced is an advanced tool that allows you to prove your balance without exposing your addresses, balance, or other sensitive information to the requester, using state-of-the-art Zero-Knowledge Proof technology.",
     },
     {
       title: "How does it work?",
       description:
-        "You upload a request for verification, the request is signed by the verifier, and the verifier verifies the request.",
+        "You submit a verification request, which is processed using Zero-Knowledge Proofs. The verifier validates the proof without ever seeing your actual balance or addresses, ensuring complete privacy.",
     },
     {
-      title: "Why should I use FundPoint?",
+      title: "Why should I use CashProof Enhanced?",
       description:
-        "FundPoint allows you to verify your balance without exposing your addresses or balance to the requester.",
+        "CashProof Enhanced ensures your financial privacy while providing robust proof of funds. It's ideal for high-value transactions where privacy and security are paramount.",
     },
     {
       title: "Disclaimer",
       description:
-        "Note FundPoint is currently a proof of concept prototype and as provided as-is without any guarantees. Use at your own risk.",
+        "CashProof Enhanced is currently a proof of concept and is provided as-is without any guarantees. Use at your own risk.",
     },
   ],
   steps: [
     {
-      title: "Create",
+      title: "Create Request",
       description:
-        "Create a balance verification request. A verification link will be generated that you can send to the other party.",
+        "Initiate a balance verification request. A unique verification link is generated for you to share with the other party.",
     },
     {
-      title: "Share",
+      title: "Share Link",
       description:
-        "Recipient accesses the verification link and connects with a known address. The recipient proves ownership and additionally signs with attestation that the funds belong to them.",
+        "The recipient accesses the verification link, connects their known address, and generates a Zero-Knowledge Proof that they meet the balance requirements, without revealing their actual balance.",
     },
     {
-      title: "Verify",
+      title: "Verify Proof",
       description:
-        "Requester can review the completed attestation and verification event on an underlying smart contract.",
+        "The requester reviews the completed attestation and verification on the underlying smart contract, ensuring the proof is valid while keeping the recipient's balance private.",
     },
   ],
 };
